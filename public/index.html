@@ -1,0 +1,38 @@
+<!-- index.html -->
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="notesApp">
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+    <title>Node/Angular Notes App</title>
+
+    <!-- SCROLLS -->
+    <link rel="stylesheet" href="bootstrap.min.css"><!-- load bootstrap -->
+    <style>
+        html                    { overflow-y:scroll; }
+        body                    { padding-top:50px; }
+        #todo-list              { margin-bottom:30px; }
+    </style>
+
+    <!-- SPELLS -->
+    <script src="jquery.min.js"></script><!-- load jquery -->
+    <script src="angular.min.js"></script><!-- load angular -->
+	<script src="angular-route.js"></script><!-- load angular route -->
+    <script src="core.js"></script>
+
+</head>
+<!-- SET THE CONTROLLER AND GET ALL TODOS -->
+<body ng-controller="mainController">
+
+    <div class="container">
+
+			<ng-view />
+
+    </div>
+
+</body>
+</html>

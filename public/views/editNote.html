@@ -1,0 +1,15 @@
+<div ng-controller="mainController">
+
+<label>Title</label>
+<input type="text" ng-model="title">
+<br />
+<br />
+<label>Content</label>
+<textarea ng-model="content"></textarea>
+<br />
+<br />
+<input type="button" value="Save" ng-click="saveNote(id)" />
+<br />
+<br />
+<label style="color:red;">{{error}}</label>
+</div>

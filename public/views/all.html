@@ -1,0 +1,17 @@
+<div >
+<h2>All Notes</h2>
+
+<ul>
+	<li ng-repeat="note in data.notes">{{note.title}} <a style="cursor:pointer;" ng-click="editNote(note.id)">edit</a> | <a style="cursor:pointer;" ng-click="viewNote(note.id)">view</a></li>
+</ul>
+
+<br />
+
+<a style="cursor:pointer;" ng-click="addNote()">Add New Note</a>
+
+<br />
+<br />
+
+
+
+</div>

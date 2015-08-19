@@ -1,0 +1,17 @@
+
+<input type="hidden" ng-model="id"></input/>
+<label>Title</label>
+<input type="text" ng-model="title" />
+
+<br />
+
+<label>Content</label>
+<textarea ng-model="content">{{content}}</textarea>
+
+<br />
+<br />
+
+<input type="button" ng-click="submitNote()" value="Add" />
+<br />
+<br />
+<label style="color:red;">{{error}}</label>
